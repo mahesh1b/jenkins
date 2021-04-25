@@ -1,9 +1,10 @@
 node{
 	stage('SCM Checkout'){
-		git ''
+		git 'https://github.com/mahesh1b/jenkins'
 	}
 	stage('Compile-Package'){
-		sh 'mvn package'
+		def mvnhm = tool name: 'maven-3', type: 'maven'
+		sh "${mvnhm}/bin/mvn package"
 	}
 
 }
