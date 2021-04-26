@@ -7,7 +7,7 @@
 	<version>0.0.14</version>
 	<name>my-app</name>
 	<url>http://maven.apache.org</url>
-
+	<!== Hello world! ==>
 	<dependencies>
 		<dependency>
 		    <groupId>org.apache.poi</groupId>
